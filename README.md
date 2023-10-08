@@ -24,7 +24,7 @@ Documentations:
 
 =======================================
 
-Published website:
+Published website: 
 
 =======================================
 
