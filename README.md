@@ -24,7 +24,8 @@ Documentations:
 
 =======================================
 
-Published website: 
+Published website: https://thai-fpt-aptech.github.io/COZY-AIRCONDITIONERS_Group05/
+
 
 =======================================
 
