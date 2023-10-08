@@ -20,7 +20,8 @@ List Of Member:
 
 =======================================
 
-Documentations:
+Documentations: https://github.com/Thai-FPT-Aptech/COZY-AIRCONDITIONERS_Group05/tree/main/Documentation
+
 
 =======================================
 
