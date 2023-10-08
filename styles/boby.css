@@ -1,0 +1,363 @@
+body{
+    background-size: cover;
+    background-position-y: -100px;
+}
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+p{
+    color: #000000;
+ }
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-bottom: 50px;
+}
+.container2{
+    max-width: 600px;
+}
+.carousel-inner{
+    margin-top: -120px;
+}
+.home{
+    margin: auto;
+    max-width: 1200px;
+    padding-left: 25px;
+    padding-bottom: 50px;
+    margin-top: -100px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+    padding: 20px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 50px;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0px;
+}
+.btn, .sortbtn{
+    display: inline-block;
+	 background-color: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0px;
+    border-radius: 30px;
+    transition: 0.5s ;
+}
+.btn:hover{
+    background-color: #563434;
+}
+.sortbtn{
+    border: none;
+    cursor: pointer;
+}
+
+/* End Banner css*/
+/* Categories css*/
+.categories{
+    margin: 70px 0px;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    padding-right: 50px;
+    width: 200%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+/* End Categories css*/
+/* Featured css*/
+.featured{
+    margin-bottom: 80px;
+    margin-top: -100px;
+    padding-top: 0px;
+}
+.featured h3{
+    font-size: larger;
+    color: red;
+}
+.featured h4{
+    text-align: center;
+    color: cornflowerblue;
+    font-weight: bold;
+    font-size: large;
+}
+.featured p{
+    font-size: xx-large;
+    color: dodgerblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p.price{
+    color: red;
+    font-size: large;
+    text-align: center;
+    margin-top: -30px;
+}
+.col-2:hover{
+    transform: translateY(-10px);
+}
+#product-list{
+    margin-top: -150px;
+}
+#product-list h4{
+    margin-top: -100px;
+}
+.col-4 {
+    flex-basis: 28%;
+    padding: 10px;
+    cursor: pointer;
+    min-width: 200px;
+    margin-bottom: 50px;
+    margin: 6px;
+    background: #f2f2f2;
+    transition: transform 0.5s;
+}
+.col-1 img{
+    width: 700px;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title:after{
+    content: '';       
+background-color: #ff523b;
+width: 80px;
+    height: 5px;
+border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.col-4{
+    border-radius: 4%;
+}
+.col-4 img{
+    max-width: 250px;
+}
+.col-4 h4{
+    color: cornflowerblue;
+    font-weight: bold;
+}
+.rating{
+    text-align: center;
+}
+.rating .fa{
+    color: orange;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+.col-5 img{
+    max-width: 900px;
+}
+.col-5:hover{
+    transform: translateY(-5px);
+}
+.col-7 img{
+    max-width: 590px;
+}
+.col-7:hover{
+    transform: translateY(-5px);
+}
+/* End Featured css*/
+/* Footer css */
+
+ ul{
+    list-style-type: none;
+}
+
+.copyright{
+    text-align: center;
+}
+/* End Footer css*/
+/* Modal css */
+.close-modal {
+    background: none;
+    color: black;
+    border: none;
+    font-size: 3.5rem;
+    cursor: pointer;
+  }  
+.modal {
+    position: fixed;
+    top: -80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 0.3s ease-in-out;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    z-index: 2;
+    background-color: #fff;
+    width: 1000px;
+    height: 700px;
+  }
+.modal img{
+    width: 170%;
+}  
+.modal.active {
+    top: 50%;
+  }  
+.modal-header {
+    display: flex;
+    flex-direction: row-reverse;
+  }  
+.modal .body {
+    padding: 0.75rem;
+  }
+/* End Modal css*/
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+#overlay.active {
+    display: block;
+  }
+/* Search in product page css */ 
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+select :focus{
+outline: none;
+}
+.btn{
+    text-decoration: none;
+}
+.page-btn{
+    margin: 0 auto 80px;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+width: 40px;
+height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page-btn span:hover{
+    background-color: #ff523b;
+    color: #fff;
+}
+.single-product {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.single-product .col-2 img{
+     padding: 0;
+}
+.single-product .col-2{ 
+   padding: 20px;
+}
+  .single-product h4{
+    margin: 20px 0px;
+    font-size: 22px;
+    font-weight: bold;
+} 
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+}
+.submitbtn{
+    margin: auto;
+    text-align: center;
+  }
+#error_message{
+    margin-bottom: 20px;
+    background: #fe8b8e;
+    padding: 0px;
+    text-align: center;    
+font-size: 14px;    
+transition: all 0.5s ease;
+}
+#search {
+    border: 2px solid cornflowerblue;
+    padding: 10px;
+    width: 280px;
+ }
+ .brand a img{
+    width: 230px;   
+    
+ }
+ a{
+    text-decoration: none;
+ }
+ .choice-brand{
+    text-align: center;
+ }
+.choice-brand h1{
+    padding: 10px;
+    color: #555;
+}
+.contact{
+    padding: 20px;
+}
+.container-form {
+    width: 300px;
+    margin: auto;
+    /* padding-bottom: 20px; */
+}
+.container-cart{
+    padding: 40px;
+}
+form{
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+/* Sign Up */
+.col-sm-6{
+    padding-top: 50px;
+
+}
+.col-sm-6 input{
+    width: 400px;
+}
+.col-sm-6 td{
+    width: 200px;
+}

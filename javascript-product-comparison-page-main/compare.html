@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../styles/header.css"/>
+      <link rel="stylesheet" href="../styles/logo.css">
+      <link rel="stylesheet" href="../styles/boby.css">
+      <link rel="stylesheet" href="../styles/footer.css">
+      <link rel="stylesheet" href="../styles/addtocart.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+      <title>COZY AIRCONDITIONERS - Home</title>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css2?family =Raleway:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap"
+         rel ="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        td>img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+/*body*/
+body{
+background-size: cover;
+background-position-y: -100px;
+}
+*{
+margin: 0;
+padding: 0%;
+box-sizing: border-box;
+font-family: 'Raleway', sans-serif;
+}
+p{
+color: #000000;
+}
+div.container{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.container{
+max-width: 1300px;
+margin: auto;
+padding-left: 25px; 
+}
+.container2{
+max-width: 600px;
+}
+.row{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: space-around;
+margin-bottom: 60px;
+}
+.col-2 {
+flex-basis: 50%;
+min-width: 300px;
+}
+.col-2 img{
+max-width: 100%;
+padding: 50px 50px;
+}
+.col-2 h1{
+font-size: 50px;
+line-height: 60px;
+margin: 25px 0px;
+}
+.btn, .sortbtn{
+display: inline-block;
+background-color: #ff523b;
+color: #fff;
+padding: 8px 30px;
+margin: 30px 0px;
+border-radius: 30px;
+transition: 0.5s ;
+}
+.btn:hover{
+background-color: #563434;
+}
+.sortbtn{
+border: none;
+cursor: pointer;
+}
+
+/* End Banner css*/
+/* Categories css*/
+.categories{
+margin: 70px 0px;
+}
+.col-3{
+flex-basis: 30%;
+min-width: 250px;
+margin-bottom: 30px;
+}
+.col-3 img{
+width: 100%;
+padding-right: 50px;
+}
+.small-container{
+max-width: 1080px;
+margin: auto;
+padding-left: 25px;
+padding-right: 25px;
+}
+/* End Categories css*/
+/* Featured css*/
+.featured{
+margin-bottom: 80px;
+margin-top: -80px;
+padding-top: 0px;
+}
+.featured h3{
+font-size: larger;
+color: red;
+}
+.featured p{
+font-size: xx-large;
+color: dodgerblue;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.col-4 {
+flex-basis: 28%;
+padding: 10px;
+cursor: pointer;
+min-width: 200px;
+margin-bottom: 50px;
+margin: 6px;
+background: #f2f2f2;
+transition: transform 0.5s;
+}
+.col-1 img{
+width: 700px;
+}
+
+.title{
+text-align: center;
+margin: 0 auto 80px;
+position: relative;
+line-height: 60px;
+color: #555;
+}
+.title:after{
+content: '';       
+background-color: #ff523b;
+width: 80px;
+height: 5px;
+border-radius: 5px;
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+}
+h4{
+color: #555;
+font-weight: normal;
+margin-bottom: 10px;
+}
+.col-4{
+border-radius: 4%;
+}
+.col-4 img{
+max-width: 250px;
+}
+.col-4 h4{
+color: cornflowerblue;
+font-weight: bold;
+}
+.rating .fa{
+color: orange;
+}
+.col-4:hover{
+transform: translateY(-5px);
+}
+.col-5 img{
+max-width: 900px;
+}
+.col-5:hover{
+transform: translateY(-5px);
+}
+.col-7 img{
+max-width: 590px;
+}
+.col-7:hover{
+transform: translateY(-5px);
+}
+/* End Featured css*/
+/* Footer css */
+
+ul{
+list-style-type: none;
+}
+
+.copyright{
+text-align: center;
+}
+/* End Footer css*/
+/* Modal css */
+.close-modal {
+background: none;
+color: black;
+border: none;
+font-size: 3.5rem;
+cursor: pointer;
+}  
+.modal {
+position: fixed;
+top: -80%;
+left: 50%;
+transform: translate(-50%, -50%);
+transition: top 0.3s ease-in-out;
+border: 1px solid #ccc;
+border-radius: 10px;
+z-index: 2;
+background-color: #fff;
+width: 1000px;
+height: 700px;
+}
+.modal img{
+width: 170%;
+}  
+.modal.active {
+top: 50%;
+}  
+.modal-header {
+display: flex;
+flex-direction: row-reverse;
+}  
+.modal .body {
+padding: 0.75rem;
+}
+/* End Modal css*/
+#overlay {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.3);
+}
+#overlay.active {
+display: block;
+}
+/* Search in product page css */ 
+.row-2{
+justify-content: space-between;
+margin: 100px auto 50px;
+}
+select{
+border: 1px solid #ff523b;
+padding: 5px;
+}
+select :focus{
+outline: none;
+}
+.btn{
+text-decoration: none;
+}
+.page-btn{
+margin: 0 auto 80px;
+}
+.page-btn span{
+display: inline-block;
+border: 1px solid #ff523b;
+margin-left: 10px;
+width: 40px;
+height: 40px;
+text-align: center;
+line-height: 40px;
+cursor: pointer;
+}
+.page-btn span:hover{
+background-color: #ff523b;
+color: #fff;
+}
+.single-product {
+margin-top: 80px;
+margin-bottom: 80px;
+}
+.single-product .col-2 img{
+padding: 0;
+}
+.single-product .col-2{ 
+padding: 20px;
+}
+.single-product h4{
+margin: 20px 0px;
+font-size: 22px;
+font-weight: bold;
+} 
+.single-product select{
+display: block;
+padding: 10px;
+margin-top: 10px;
+}
+.submitbtn{
+margin: auto;
+text-align: center;
+}
+#error_message{
+margin-bottom: 20px;
+background: #fe8b8e;
+padding: 0px;
+text-align: center;    
+font-size: 14px;    
+transition: all 0.5s ease;
+}
+#search {
+border: 2px solid cornflowerblue;
+padding: 10px;
+width: 280px;
+}
+.brand a img{
+width: 230px;   
+
+}
+a{
+text-decoration: none;
+}
+.choice-brand{
+text-align: center;
+}
+.choice-brand h1{
+padding: 10px;
+color: #555;
+}
+.contact{
+padding: 20px;
+}
+.container-form {
+width: 300px;
+margin: auto;
+/* padding-bottom: 20px; */
+}
+.container-cart{
+padding: 40px;
+}
+form{
+width: 500px;
+margin: auto;
+padding: 20px;
+}
+/* Sign Up */
+.col-sm-6{
+padding-top: 50px;
+
+}
+.col-sm-6 input{
+width: 400px;
+}
+.col-sm-6 td{
+width: 200px;
+}
+/*header*/
+
+.wrapper{ 
+padding: 4% 28%;
+} 
+.wrapper .input_field{
+margin-bottom: 10px;
+}  
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+border: 1px solid #e0e0e0;
+width: 100%;
+padding: 10px;
+}  
+.wrapper textarea{
+resize: none;
+height: 80px;
+}
+.wrapper .submitbtn input[type="submit"]{
+border: 0px;
+text-align: center;
+cursor: pointer;
+display: inline-block;
+background-color: #ff523b;
+color: #fff;
+padding: 8px 30px;
+margin: 30px 0px;
+border-radius: 30px;
+transition: background-color 0.5s;
+}
+
+#header{    
+background-color: darkturquoise;
+}
+.header{
+    background-color: cornflowerblue;
+    width: 110%;
+}
+.header .row{
+    margin-top: 70px;
+}
+.container1{
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+nav{
+display: flex;
+justify-content:space-between;
+justify-items: center;
+}
+
+#main-menu{
+display: flex;
+list-style-type: none;
+margin:0;
+padding: 0;
+}
+#main-menu li{
+position: relative;
+}
+#main-menu li a{
+color: whitesmoke;
+display: block;
+padding: 18px 1px;
+text-decoration: none;
+font-size: x-large;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#main-menu ul.sub-menu{
+position: absolute;
+background-color: #fff;
+padding: 5px 0px;
+list-style: none;
+width: 200px;
+border: 1px solid whitesmoke;
+display: none;
+
+
+}
+#main-menu li:hover>ul.sub-menu{
+display: block;
+}
+
+#main-menu ul.sub-menu a{
+padding: 8px 15px;
+border-bottom: 1px solid;
+color: cornflowerblue;
+left: 0;
+}
+#main-menu ul.sub-menu  li:hover a{
+border-bottom: 1px solid;
+color: cornflowerblue;
+background-color: lightgray;
+}
+#main-menu ul.sub-menu li:last-child a{
+border: none;
+}
+#main-menu ul.sub-menu ul.sub-menu{
+left: 199px;
+top: -12px;
+}
+#main-menu>li>a{
+position: relative;
+font-size: large;
+}
+/*Thiết lập border khi hover*/
+#main-menu>li>a::before{
+content: "";
+height: 4px;
+width: 0px;
+background: red;
+position: absolute;
+bottom: 0px;
+left: 0px ;
+transition: 0.25s cubic-bezier(0.6, 0.04, 0.98, 00.8);  
+}
+#main-menu>li:hover>a::before{
+display: block;
+width: 100%;
+left:0px;
+}
+/*44:13*/
+#main-menu>li.has-child::after {
+font-family: "Font Awesome 5 Free";
+font-weight: 900;
+content:"\f107";
+color: black;
+position: absolute;
+top: 0px;
+right: 0px;
+padding: 18px 0px;
+
+}
+#main-menu .sub-menu>li.has-child::after {
+font-family: "Font Awesome 5 Free";
+font-weight: 900;
+content:"\f105";
+color: black;
+position: absolute;
+top: 0px;
+right: 10px;
+padding: 8px 0px;
+}
+#main-menu .sub-menu>li.has-child:hover::after{
+color: black;
+
+}
+nav{
+flex: 1;
+text-align: center;
+
+}
+nav ul{
+display: inline-block;
+list-style-type: none;
+}    
+nav ul li{
+display: inline-block;
+margin-right: 30px;
+font-size: larger;
+}
+/*footer*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+line-height: 1.5;
+font-family: 'Poppins', sans-serif;
+}
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+.container{
+max-width: 1170px;
+margin:auto;
+}
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+ul{
+list-style: none;
+}
+.footer{
+background-color: darkturquoise;
+padding: 70px 0;
+}
+.footer-col{
+width: 25%;
+padding: 0 15px;
+}
+.footer-col h4{
+font-size: 18px;
+color: #ffffff;
+text-transform: capitalize;
+margin-bottom: 35px;
+font-weight: 500;
+position: relative;
+}
+.footer-col h4::before{
+content: '';
+position: absolute;
+left:0;
+bottom: -10px;
+background-color: #e91e63;
+height: 2px;
+box-sizing: border-box;
+width: 50px;
+}
+.footer-col ul li:not(:last-child){
+margin-bottom: 10px;
+}
+.footer-col ul li a{
+font-size: 16px;
+text-transform: capitalize;
+color: #ffffff;
+text-decoration: none;
+font-weight: 300;
+color: white;
+display: block;
+transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+color: #ffffff;
+padding-left: 8px;
+}
+.footer-col .social-links a{
+display: inline-block;
+height: 40px;
+width: 40px;
+background-color: rgba(255,255,255,0.2);
+margin:0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ffffff;
+transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+color: #24262b;
+background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+.footer-col{
+width: 50%;
+margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+.footer-col{
+width: 100%;
+}
+}
+
+/*logo*/
+#logo{
+padding: 5px 0px;
+
+}
+#logo img{
+max-width: 300px;
+height: auto;
+}
+.logo-cozy{
+width: 15%;
+}
+.app-logo{
+margin-top: 20px;
+}
+.app-logo img{
+width: 140px;
+}
+.logo-red{
+font-weight: bold;
+font-size: 30px;
+color: cornflowerblue;
+
+}
+.logo-white{
+font-weight: bold;
+font-size: 25px;    
+color: #fff;
+line-height: 60px;
+}
+.table{
+    margin: 80px;
+}
+    </style>
+    <title>Title</title>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="header">
+           <nav class="container1">
+              <ul id="main-menu">
+                 <li><a href="../index.html" id="logo"><img src="../images/logo-icon/logocozy.png"></a></li>
+                    <li><a href="../index.html">Home <i class='fas fa-home' style='font-size:20px'></i></a></li>
+                    <li><a>Brand <i class='fas fa-caret-down' style='font-size:20px'></i></a>
+                       <ul class="sub-menu">
+                             <li><a href="../HTML/panasonic.html">Panasonic</a></li>
+                             <li><a href="../HTML/carrier.html">Carrier</a></li>
+                             <li><a href="../HTML/nagakawa.html">Nagakawa</a></li>
+                             <li><a href="../HTML/samsung.html">Samsung</a></li>
+                       </ul>              
+                    </li>        
+                    <li><a href="../HTML/another.html">Another Product</a></li>
+                    
+                    <li><a href="../HTML/cart.html">Cart <i class="fa fa-shopping-cart" style="font-size:20px"></i></a></li>
+                    <li><a href="../HTML/contact.html">Contact Us <i class='fas fa-envelope-square' style='font-size:20px'></i></i></a></li>     
+              </ul>
+           </nav>
+        </div>
+    </div>
+    <h1 class="display-5 my-5 text-center" style="padding-bottom: 0;">Compare Product</h1>
+    <div class="container">
+        <div class="col-md-9 mx-auto">
+            <table class="table">
+                <tr class="bg-light">
+                    <th>Select Product</th>
+                    <th width="300px">
+                        <select class="form-control" id="select1" onchange="item1(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                    <th width="300px">
+                        <select class="form-control" id="select2" onchange="item2(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Product Image</th>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                            id="img1" alt=" ">
+                    </td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                            id="img2" alt=" ">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Product Price</th>
+                    <td id="price1">N/A</td>
+                    <td id="price2">N/A</td>
+                </tr>
+                <tr>
+                    <th>Product Description</th>
+                    <td id="desc1">N/A</td>
+                    <td id="desc2">N/A</td>
+                </tr>
+                <tr>
+                    <th>Product Brand</th>
+                    <td id="brand1">N/A</td>
+                    <td id="brand2">N/A</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js "></script>
+   
+</body>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
+
+<script src="src/data.js"></script>
+<script src="main.js"></script>

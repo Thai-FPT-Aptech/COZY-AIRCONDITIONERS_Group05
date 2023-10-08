@@ -1,0 +1,29 @@
+#logo{
+    padding: 5px 0px;
+
+}
+#logo img{
+max-width: 300px;
+height: auto;
+}
+.logo-cozy{
+    width: 15%;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.logo-red{
+    font-weight: bold;
+    font-size: 30px;
+    color: cornflowerblue;
+    
+}
+.logo-white{
+    font-weight: bold;
+    font-size: 25px;    
+color: #fff;
+line-height: 60px;
+}
