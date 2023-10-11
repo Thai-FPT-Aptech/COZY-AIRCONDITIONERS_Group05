@@ -163,6 +163,6 @@ nav ul{
 }    
 nav ul li{
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 0;
     font-size: larger;
 }
