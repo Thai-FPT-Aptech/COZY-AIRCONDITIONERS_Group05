@@ -77,7 +77,7 @@ nav{
 #main-menu ul.sub-menu{
     position: absolute;
     background-color: #fff;
-    padding: 5px 0px;
+    padding: 0;
     list-style: none;
     width: 200px;
     border: 1px solid whitesmoke;
